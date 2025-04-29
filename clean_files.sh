@@ -12,10 +12,10 @@ echo ""
 # Display files to be deleted
 echo "The following files will be deleted:"
 find . -type f -name "*.vv" 2>/dev/null
-find . -type f -name "yosys_.log" 2>/dev/null
-find . -type f -name "vivado_*.log" 2>/dev/null
-find . -type f -name "script*.yos" 2>/dev/null
-find . -type f -name "vivado_script_*.tcl" 2>/dev/null
+find . -type f -name "*_vivado.log.log" 2>/dev/null
+find . -type f -name "*_yosys.log.log" 2>/dev/null
+find . -type f -name "*_yosys.tcl" 2>/dev/null
+find . -type f -name "*_vivado.tcl" 2>/dev/null
 echo ""
 
 # Ask for confirmation
@@ -28,9 +28,9 @@ fi
 # Delete files
 echo "Deleting files..."
 find . -type f -name "*.vv" -delete 2>/dev/null
-find . -type f -name "yosys_.log" -delete 2>/dev/null
-find . -type f -name "vivado_*.log" -delete 2>/dev/null
-find . -type f -name "script*.yos" -delete 2>/dev/null
-find . -type f -name "vivado_script_*.tcl" -delete 2>/dev/null
+find . -type f -name "*_vivado.log.log" -delete 2>/dev/null
+find . -type f -name "*_yosys.log.log" -delete 2>/dev/null
+find . -type f -name "*_yosys.tcl" -delete 2>/dev/null
+find . -type f -name "*_vivado.tcl" -delete 2>/dev/null
 
 echo "Deletion complete!"
