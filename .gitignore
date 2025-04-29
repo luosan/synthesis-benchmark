@@ -1,2 +1,7 @@
 /database
 __pycache__
+*.vv
+yosys_*.log
+vivado_*.log
+script*.yos
+vivado_script_*.tcl
